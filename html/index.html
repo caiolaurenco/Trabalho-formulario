@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ordem de Serviço</title>
+    <title>Imobiliaria Rezende</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -15,7 +15,7 @@
     <main>
 
         <div class="container">
-            <h1>Ordem de Serviço Mecânico</h1>
+            <h1>Imobiliária Rezende</h1>
             <form id="formOrdemServico">
 
                 <div class="form-section">
@@ -41,44 +41,118 @@
                 </div>
 
                 <div class="form-section">
-                    <h2>Dados do Veículo</h2>
+                    <h2>Endereço do cliente</h2>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="veiculoMarca">Marca:</label>
-                            <input type="text" id="veiculoMarca" required>
+                            <label for="cepCliente">Cep:</label>
+                            <input type="text" id="nomeCliente" required>
                         </div>
                         <div class="form-group">
-                            <label for="veiculoModelo">Modelo:</label>
-                            <input type="text" id="veiculoModelo" required>
+                            <label for="ruaCliente">Rua:</label>
+                            <input type="tel" id="ruaCliente" required>
+                        </div>
+                        <div class="form-group">                                    
+                            <label for="numeroCliente">Número:</label> 
+                            <input type="text" id="numeroCliente">      
                         </div>
                         <div class="form-group">
-                            <label for="veiculoAno">Ano:</label>
-                            <input type="number" id="veiculoAno" min="1900" max="2024" required>
+                            <label for="bairroCliente">Bairro:</label>
+                            <input type="text" id="bairroCliente">
+                        </div>
+                        <div class="form-group">
+                            <label for="cidadeCliente">Cidade:</label>
+                            <input type="text" id="cidadeCliente">
+                        </div>
+                        <div class="form-group">
+                            <label for="estadoCliente">Estado:</label>
+                            <select id="estadoCliente" required>
+                                <option value="">Selecione...</option>
+                                <option>Acre</option>
+                                <option>Alagoas</option>
+                                <option>Amapá</option>
+                                <option>Amazonas</option>
+                                <option>Bahia</option>
+                                <option>Ceará</option>
+                                <option>Espirito Santo</option>
+                                <option>Goiás</option>
+                                <option>Maranhão</option>
+                                <option>Mato Grosso</option>
+                                <option>Mato Grosso do Sul</option>
+                                <option>Minas Gerais</option>
+                                <option>Pará</option>
+                                <option>Paraíba</option>
+                                <option>Paraná</option>
+                                <option>Pernambuco</option>
+                                <option>Piauí</option>
+                                <option>Rio de Janeiro</option>
+                                <option>Rio Grande do Norte</option>
+                                <option>Rio Grande do Sul</option>
+                                <option>Rondônia</option>
+                                <option>Roraima</option>
+                                <option>Santa Catarina</option>
+                                <option>São Paulo</option>
+                                <option>Sergipe</option>
+                                <option>Tocantins</option>
+                                <option>Distrito Federal</option>
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="form-section">
+                    <h2>Dados do Imóvel</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cidadeImovel">Cidade:</label>
+                            <input type="text" id="cidadeImovel" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bairroImovel">bairro:</label>
+                            <input type="text" id="bairroImovel" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tipoImovel">Tipo do imóvel:</label>
+                            <select id="tipoImovel" required>
+                                <option value="">Selecione...</option>
+                                <option>Apartamento</option>
+                                <option>Casa</option>
+                                <option>Casa em condomínio</option>
+                                <option>Casa em condomínio fechado</option>
+                                <option>Casa geminado</option>
+                                <option>Chácara</option>
+                                <option>Cobertura</option>
+                                <option>Condomínio fechado</option>
+                                <option>Duplex</option>
+                                <option>Galpão</option>
+                                <option>Imóvel comercial</option>
+                                <option>Sala comercial</option>
+                                <option>sobrado</option>
+                                <option>Terreno</option>
+                                <option>Terreno em condomínio fechado</option>
+
+                            </select>
                         </div>
                     </div>
                 </div>
 
                 <div class="form-section">
-                    <h2>Detalhes do Serviço</h2>
+                    <h2>Valores de Imóveis</h2>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="tipoServico">Tipo de Serviço:</label>
-                            <select id="tipoServico" required>
-                                <option value="">Selecione...</option>
-                                <option>Revisão Preventiva</option>
-                                <option>Troca de Óleo</option>
-                                <option>Alinhamento/Balanceamento</option>
-                                <option>Reparos no Motor</option>
-                                <option>Freios</option>
-                            </select>
+                            <label for="valorMínimo">Valor mínimo:</label>
+                            <input type="number" id="valorMínimo" required>
                         </div>
                         <div class="form-group">
-                            <label for="dataServico">Data do Serviço:</label>
-                            <input type="date" id="dataServico" required>
+                            <label for="valorMaximo">Valor máximo:</label>
+                            <input type="number" id="valorMaximo" required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="descricao">Descrição do Problema:</label>
+                        <label for="descricao">Descrição do imóvel que procura:</label>
                         <textarea id="descricao" rows="4" required></textarea>
                     </div>
                 </div>
@@ -86,11 +160,11 @@
                 <div class="form-section">
                     <div class="checkbox-group">
                         <input type="checkbox" id="newsletter">
-                        <label for="newsletter">Desejo receber atualizações e promoções por e-mail</label>
+                        <label for="newsletter">Desejo receber atualizações e novas propostas por e-mail</label>
                     </div>
                 </div>
 
-                <button type="submit">Enviar Ordem</button>
+                <button type="submit">Enviar</button>
             </form>
         </div>
 

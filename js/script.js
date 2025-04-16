@@ -5,7 +5,6 @@ document.getElementById('formOrdemServico').addEventListener('submit', function 
     const telefone = document.getElementById('telefone');
     const email = document.getElementById('email');
     const cpf = document.getElementById('cpf');
-    const veiculoAno = document.getElementById('veiculoAno');
 
     let valid = true;
 
@@ -28,33 +27,9 @@ document.getElementById('formOrdemServico').addEventListener('submit', function 
         }
     }
 
-/*  Opção 1
-
-    let cpfNumeros = cpf.value.replace('.', '');
-    cpfNumeros = cpfNumeros.replace('.','');
-    cpfNumeros = cpfNumeros.replace('-','');
-
-    const cpfRegex = /^\d{11}$/;
-    if (!cpfRegex.test(cpfNumeros)) {
-        alert('Por favor, insira um CPF em um formato válido');
-        valid = false;
-    }*/
-
-/*  Opção 2
-
-    const cpfRegex = /^\d{3}\.\d{3}\.\d{3}\-\d{2}$/;
-    if (!cpfRegex.test(cpf.value)) {
-        alert('Por favor, insira um CPF em um formato válido');
-        valid = false;
-    } */
-
-    if (veiculoAno.value < 1900 || veiculoAno.value > new Date().getFullYear()) {
-        alert('Ano do veículo deve ser entre 1900 e o ano atual');
-        valid = false;
-    }
 
     if (valid) {
-        alert('Ordem de serviço enviada com sucesso!');
+        alert('Seus dados e o imóvel que você procura foram enviados!');
         this.reset();
     }
 });
