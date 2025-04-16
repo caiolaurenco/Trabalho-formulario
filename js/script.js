@@ -30,6 +30,7 @@ document.getElementById('formOrdemServico').addEventListener('submit', function 
     if (nascimentoCliente.value < 1900 || nascimentoCliente.value > new Date().getFullYear()) {
         alert('Sua data de nascimento tem que estar entre 1900 e o ano atual');
         valid = false;
+    }
 
 
     if (valid) {
