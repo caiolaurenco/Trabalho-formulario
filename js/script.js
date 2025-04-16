@@ -5,6 +5,7 @@ document.getElementById('formOrdemServico').addEventListener('submit', function 
     const telefone = document.getElementById('telefone');
     const email = document.getElementById('email');
     const cpf = document.getElementById('cpf');
+    const nascimentoCliente = document.getElementById('nascimentoCliente');
 
     let valid = true;
 
@@ -26,6 +27,9 @@ document.getElementById('formOrdemServico').addEventListener('submit', function 
             valid = false;
         }
     }
+    if (nascimentoCliente.value < 1900 || nascimentoCliente.value > new Date().getFullYear()) {
+        alert('Sua data de nascimento tem que estar entre 1900 e o ano atual');
+        valid = false;
 
 
     if (valid) {
