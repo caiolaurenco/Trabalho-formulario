@@ -6,6 +6,7 @@ document.getElementById('formOrdemServico').addEventListener('submit', function 
     const email = document.getElementById('email');
     const cpf = document.getElementById('cpf');
     const nascimentoCliente = document.getElementById('nascimentoCliente');
+    const cep = document.getElementById('cep');
 
     let valid = true;
 
